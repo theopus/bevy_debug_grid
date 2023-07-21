@@ -12,15 +12,16 @@ exclude = [
 ]
 
 [dependencies]
-bevy = { version = "0.10", default-features = false, features = [
+bevy = { version = "0.11", default-features = false, features = [
     "bevy_render",
     "bevy_pbr",
     "bevy_asset",
 ] }
 
 [dev-dependencies]
-bevy = "0.10"
-bevy_spectator = "0.2.0"
+bevy = "0.11"
+##todo change after spectator migrated main
+bevy_spectator = {git="https://github.com/GodGotzi/bevy_spectator.git", rev = "0845106"}
 
 [[example]]
 name = "default_cube"
